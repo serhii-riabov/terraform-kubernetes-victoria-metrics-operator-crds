@@ -7,7 +7,7 @@ Terraform module which creates [VictoriaMetrics Operator](https://github.com/Vic
 module "victoriametrics_operator_crds" {
   source  = "serhii-riabov/victoria-metrics-operator-crds/kubernetes"
 
-  crds_version = "0.40.0"
+  crds_version = "0.44.0"
 }
 ```
 
@@ -17,7 +17,7 @@ module "victoriametrics_operator_crds" {
   source  = "serhii-riabov/victoria-metrics-operator-crds/kubernetes"
 
   # Version of CRDs to deploy
-  crds_version = "0.40.0"
+  crds_version = "0.44.0"
 
   # Alternative URL to get source manifests from.
   # %s will be replaced with CRDs version.
