@@ -1,5 +1,5 @@
 variable "crds_version" {
-  description = "Version of the VictoriaMetrics Operator release, e.g. 0.40.0"
+  description = "Version of the VictoriaMetrics Operator release, e.g. 0.44.0"
   type        = string
 
   validation {

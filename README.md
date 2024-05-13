@@ -7,7 +7,7 @@ Terraform module which creates [VictoriaMetrics Operator](https://github.com/Vic
 module "victoriametrics_operator_crds" {
   source  = "serhii-riabov/victoria-metrics-operator-crds/kubernetes"
 
-  crds_version = "0.40.0"
+  crds_version = "0.44.0"
 }
 ```
 
@@ -17,7 +17,7 @@ module "victoriametrics_operator_crds" {
   source  = "serhii-riabov/victoria-metrics-operator-crds/kubernetes"
 
   # Version of CRDs to deploy
-  crds_version = "0.40.0"
+  crds_version = "0.44.0"
 
   # Alternative URL to get source manifests from.
   # %s will be replaced with CRDs version.
@@ -160,7 +160,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_crd_dl_url"></a> [crd\_dl\_url](#input\_crd\_dl\_url) | Template string of the URL to download CRDs | `string` | `"https://github.com/VictoriaMetrics/operator/releases/download/v%s/crd.yaml"` | no |
 | <a name="input_crds_list"></a> [crds\_list](#input\_crds\_list) | List of CRDs to deploy. If not set, all CRDs will be deployed. | `set(string)` | `[]` | no |
-| <a name="input_crds_version"></a> [crds\_version](#input\_crds\_version) | Version of the VictoriaMetrics Operator release, e.g. 0.40.0 | `string` | n/a | yes |
+| <a name="input_crds_version"></a> [crds\_version](#input\_crds\_version) | Version of the VictoriaMetrics Operator release, e.g. 0.44.0 | `string` | n/a | yes |
 | <a name="input_force_override_conflicts"></a> [force\_override\_conflicts](#input\_force\_override\_conflicts) | Force override fields manager conflicts. May be useful when importing existing CRDs. | `bool` | `false` | no |
 
 ## Outputs
